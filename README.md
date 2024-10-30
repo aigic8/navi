@@ -2,6 +2,11 @@
 
 Go CLI Application to tag files and search through them.
 
+## Questions
+
+- What if the file is deleted after being added?
+- What if the file does not exist while being added?
+
 ## Basic Idea
 
 The idea is to create tags and save them in a config file.
@@ -29,11 +34,21 @@ The config file would be `navi.yaml` or `navi.yml` in the root directory of the 
 
 ### Commands
 
+#### Initilizing
+
+```bash
+navi init .
+```
+
+The positional argument is optional and specifies the path for initialization
+
 #### Finding a file based on tag
 
 ```bash
-navi find -t gold
+navi find -t gold .
 ```
+
+The last (optional) argument is for specifying path
 
 an alternative (for faster typing) would be
 

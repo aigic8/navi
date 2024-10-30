@@ -27,6 +27,7 @@ files:
 
 - `*` means all the files in the directory, `**` means all the files in the directory and subdirectory
   - JUST AN IDEA FOR SIMPLICITY IN WRITING
+- use `.` instead of `/` in config for simplicity?
 
 ### Location and Name of the Config
 
